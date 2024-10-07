@@ -1,0 +1,16 @@
+Deploy-1 - InterfazGrafica - No Funcional
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#	modified:   package-lock.json
+#	modified:   package.json
+#	new file:   public/images-brand/QualityPeople-Icon.png
+#	deleted:    src/App.css
+#	modified:   src/App.js
+#	new file:   src/App.scss
+#	new file:   src/Pages/Dashboard.js
+#	new file:   src/Pages/Evaldesem.js
+#	modified:   src/index.css
+#

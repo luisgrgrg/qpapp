@@ -1,0 +1,13 @@
+.welcome-card {
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra 3D */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto 3D al pasar el cursor sobre la tarjeta */
+.welcome-card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el cursor */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Aumenta la sombra */
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
