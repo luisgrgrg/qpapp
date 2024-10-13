@@ -1,4 +1,4 @@
-import { Form, Table, Card,Button, Container, Col, Row } from 'react-bootstrap'
+import { Form, Table, Card, Button, Container, Col, Row } from 'react-bootstrap'
 const Evaldesem = () => {
 
     return (
@@ -9,7 +9,7 @@ const Evaldesem = () => {
                     <Col xs={12}>
                         <Card className="p-3">
                             <Form.Group as={Row} controlId="motivoEvaluacion">
-                                <Form.Label column sm="2">MOTIVO EVALUACIÓN:</Form.Label>
+                                <Form.Label column sm="4">MOTIVO EVALUACIÓN:</Form.Label>
                                 <Col sm="6">
                                     <Form.Select defaultValue="Renovación de Contrato">
                                         <option>Renovación de Contrato</option>
@@ -39,28 +39,33 @@ const Evaldesem = () => {
                     <Col md={6}>
                         <Card className="p-3">
                             <h5>RANGOS DE CALIFICACIÓN:</h5>
-                            <Table bordered>
-                                <thead>
-                                    <tr>
-                                        <th>CUANTITATIVOS</th>
-                                        <th>CUALITATIVOS</th>
-                                        <th>DESCRIPCIÓN</th>
-                                    </tr>
-                                </thead>
-                            </Table>
+                            <div className="table-responsive">
+                                <Table bordered>
+                                    <thead>
+                                        <tr>
+                                            <th>CUANTITATIVOS</th>
+                                            <th>CUALITATIVOS</th>
+                                            <th>DESCRIPCIÓN</th>
+                                        </tr>
+                                        <td>DESCRIP</td>
+                                        <td>DESCRIP</td>
+                                        <td>DESCRIP</td>
+                                    </thead>
+                                </Table>
+                            </div>
                         </Card>
                     </Col>
                 </Row>
 
                 {/* Tabla Funciones del Cargo */}
                 <Row className="mb-4">
-                    <Col md={6}>
+                    <Col xs={12} md={6}>
                         <Card className="p-3">
-                            <h5>% Cumplimiento Total</h5>
-                            <Table bordered>
+                            <h5>Evaluaciones</h5>
+                            <Table class="table table-hover" bordered>
                                 <thead>
                                     <tr>
-                                        <th>FUNCIONES DEL CARGO</th>
+                                        <th>EVALUACIÓN</th>
                                         <th>% Cumplimiento Total</th>
                                         <th>REAL</th>
                                     </tr>
@@ -91,30 +96,32 @@ const Evaldesem = () => {
                         </Card>
                     </Col>
 
-                    <Col md={6}>
+                    <Col xs={12} md={6}>
                         <Card className="p-3">
                             <h5>Funciones del Cargo</h5>
-                            <Table bordered>
-                                <thead>
-                                    <tr>
-                                        <th>ACTIVIDADES</th>
-                                        <th>META</th>
-                                        <th>REAL</th>
-                                        <th>% CUMPLIMIENTO</th>
-                                        <th>REQUIERE PLAN?</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Ordenar papeleo</td>
-                                        <td>5</td>
-                                        <td>5</td>
-                                        <td>100%</td>
-                                        <td className="bg-success">No</td>
-                                    </tr>
-                                    {/* Puedes agregar más filas si es necesario */}
-                                </tbody>
-                            </Table>
+                            <div className="table-responsive">
+                                <Table bordered>
+                                    <thead>
+                                        <tr>
+                                            <th>ACTIVIDADES</th>
+                                            <th>META</th>
+                                            <th>REAL</th>
+                                            <th>% CUMPLIMIENTO</th>
+                                            <th>REQUIERE PLAN?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ordenar papeleo</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>100%</td>
+                                            <td className="bg-success">No</td>
+                                        </tr>
+                                        {/* Puedes agregar más filas si es necesario */}
+                                    </tbody>
+                                </Table>
+                            </div>
                         </Card>
                     </Col>
                 </Row>
