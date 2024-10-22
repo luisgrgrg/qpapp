@@ -273,7 +273,6 @@ const Evaldesem = () => {
                                                         <td>
                                                             <Form.Select
                                                                 value={funcItem.requierePlan}
-                                                                disabled={funcItem.meta > 4}
                                                                 onChange={(e) => manejarCambioPlan(funcItem, e.target.value)}
                                                             >
                                                                 <option>No</option>
